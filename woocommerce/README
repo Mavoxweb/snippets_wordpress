@@ -1,0 +1,8 @@
+Olá Esses codigos são para adicionar e desabilitar campos no woocommerce 
+e salvar os dados no campo billing principalmente para utilizar em integrações dos pedidos
+esses codigos funcionam muito para o ERP Tiny.
+
+Como Usar: 
+Salve esses sinppets diretamente no function.php do seu tema.
+Altere conforme for necessario
+
