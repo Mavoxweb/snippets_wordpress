@@ -1,0 +1,18 @@
+
+
+//pre-select
+function custom_select_variation_by_default() {
+    ?>
+    <script>
+    jQuery(document).ready(function($) {
+        $('form.variations_form').each(function() {
+            var form = $(this);
+            var select = form.find('select.woo-variation-raw-select[name="attribute_cor"]');
+            select.find('option[value!=""]').prop('selected', true);
+        });
+    });
+    </script>
+    <?php
+}
+add_action('wp_footer', 'custom_select_variation_by_default');
+
