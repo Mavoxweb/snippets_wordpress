@@ -1,0 +1,115 @@
+<a href="https://lojasdalia.com.br/carrinho-2" class="shopping-cart-btn">
+  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+  <span class="shopping-cart-icon"></span>
+  <span class="shopping-cart-text">Carrinho Flutuante</span>
+  <span class="shopping-cart-count"></span>
+</a>
+<!-- Tooltip -->
+<div id="tooltip" style="display: none;">
+    <span id="tooltip-text">Veja os produtos no seu carrinho!</span>
+</div>
+
+<style>
+  /* Estilo do botão */
+  .shopping-cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1E4770;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;
+    z-index: 9999;
+    transition: background-color 0.3s;
+  }
+
+  /* Estilo do ícone */
+  .shopping-cart-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('icone-sacola.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 18px;
+  }
+
+  /* Ajuste de espaço entre o ícone e o texto */
+  .shopping-cart-text {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+
+  /* Estilo do contador de itens */
+  .shopping-cart-count {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #FF4500;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+  }
+
+  
+	
+  /* Estilo de hover */
+  .shopping-cart-btn:hover {
+    background-color: white;
+    color: #1E4770;
+  }
+
+  .shopping-cart-btn:hover .shopping-cart-icon {
+    background-image: url('icone-sacola-branco.png');
+  }
+
+  .shopping-cart-btn:hover .shopping-cart-text {
+    color: #1E4770;
+  }
+
+  .shopping-cart-btn:hover .shopping-cart-count {
+    background-color: white;
+    color: #1E4770;
+  }
+/*Alinhar icone da sacola ao centro*/
+.fa-shopping-bag {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+	
+/*animação pulse do botão*/
+.shopping-cart-btn {
+  /*...*/
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*adicione CSS daqui para Baixo*/
+
+</style>
+
+
